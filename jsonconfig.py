@@ -1,12 +1,14 @@
 import json
 
 def _load_config(file_location):
+    # Private function for loading JSON file into memory
     with open(file_location, "r") as config_file:
         config = json.load(config_file)
     
     return config
 
 def _update_config(file_location, config, indent_size):
+    # Private function for writing the config dictionary stored in memory to JSON file
     with open(file_location, "w") as config_file:
         json.dump(config, config_file, indent=indent_size)
 
