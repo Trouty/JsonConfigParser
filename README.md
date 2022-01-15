@@ -11,8 +11,8 @@ config = JsonConfig("file_path.json", keep_structure=True) # if keep_structure =
 config.new_section("section_name") # creates a new section
 config.set_variable("section_name", "variable_name", "value") # creates a new variable and assigns it a value 
 
-print(config.get_variable("section_name", "variable_name") # prints the value of a variable
-print(config.get_section("section_name") # prints all variables and their values in a section
+print(config.get_variable("section_name", "variable_name")) # prints the value of a variable
+print(config.get_section("section_name")) # prints all variables and their values in a section
 ```
 
 # File Structuring 
