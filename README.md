@@ -18,7 +18,7 @@ print(config.get_section("section_name"))
 # Functions 
 
 ```python
-set_variable(section_name, variable_name, "value")# Changes the value of a variable in a specified section
+set_variable(section_name, variable_name, value)# Changes the value of a variable in a specified section
 new_section(section_name) # Creates a new section
 new_variable(section_name, variable_name, value) # Creates a new variable in a specified section
 get_section(section_name) # Gets all the variables and their values in a section
