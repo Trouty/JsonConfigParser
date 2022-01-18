@@ -4,9 +4,11 @@ A simple program that simplifies the use of JSON as config files
 # Example Snippet
 
 ```python
-from jsonconfig import JsonConfig
+import jsonconfig
 
-config = JsonConfig("file_path.json", keep_structure=True) # if keep_structure == True it will keep the structure of the config file when writing to it
+config = jsonconfig.JsonConfig("file_path.json", keep_structure=True) 
+# if keep_structure == True it will keep the structure of the config file when writing to it
+# keep_structure is default False
 
 config.new_section("section_name")
 config.new_variable("section_name", "variable_name", "value")
